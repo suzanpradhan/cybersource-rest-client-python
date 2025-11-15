@@ -29,7 +29,8 @@ setup(
         "urllib3-future",
         "jwcrypto",
         "cryptography",
-        "pgpy"
+        'pgpy; python_version < "3.13"',
+        'PGPy13>=0.6.1rc1; python_version >= "3.13"',
     ],
     packages=find_packages(),
     include_package_data=True,
